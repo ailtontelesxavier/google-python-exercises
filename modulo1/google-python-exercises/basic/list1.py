@@ -22,8 +22,13 @@
 # and last chars of the string are the same.
 # Note: python does not have a ++ operator, but += works.
 def match_ends(words):
-    # +++your code here+++
-    return
+    count = 0
+    for x in words:
+        if len(x) > 1:
+            if x[0] == x[-1]:
+                count += 1
+
+    return count
 
 
 # B. front_x
